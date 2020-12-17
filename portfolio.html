@@ -25,8 +25,65 @@
   p {
     text-align:center;
     font-size: small;
+  }
+
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  vertical-align: middle;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+  vertical-align: middle;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 45%;
+    flex: 45%;
+    max-width: 45%;
+    vertical-align: middle;
 
   }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+
+  } 
   
   </style>
 
@@ -39,8 +96,8 @@
 <body>
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">PORTFOLIO</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <a class="navbar-brand" href= >PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -56,43 +113,31 @@
       </nav>
       <br>
 
-      <div class="grid-container">
+      <div class="header">
+  <h1>Brian Jenkins</h1>
+  <p>Recent Work</p>
+</div>
 
-        <div class="col-md-4 col-sm-12"><img src="images/emerson.jpg">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
-          ut laoreet dolore magna aliquam erat volutpat.</p></div>
+    <!-- Photo Grid -->
 
-        <div class="col-md-4 col-sm-12"><img src="images/Silvertone.jpg">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
-          ut laoreet dolore magna aliquam erat volutpat.</p></div>
+<div class="row"> 
+  <div class="column">
+    <img src="images/Emerson.jpg" style="width:100%">
+    <img src="images/WH2.jpg" style="width:100%">
+    <img src="images/whiteGE.jpg" style="width:100%">
 
-        <div class="col-md-4 col-sm-12"><img src="images/solidstate.jpg">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
-            ut laoreet dolore magna aliquam erat volutpat.</p></div>
-          
-          </div>  
-
-       <div class="grid-container">
-
-        <div class="col"><img src="images/WH2.jpg"></div>
-
-        <div class="col"><img src="images/WH3.jpg"></div>
-
-        <div class="col"><img src="images/whiteGE.jpg"></div>
-
-        <div class="col"><img src="images/Zenith.jpg"></div>
-
-        <div class="col"><img src="images/zenith6.jpg"></div>
-
-      </div>
-
+  </div>
+  <div class="column">
+    <img src="images/WH3.jpg" style="width:100%">
+    <img src="images/Silvertone.jpg" style="width:100%">
+    <img src="images/solidstate.jpg" style="width:100%">
 
 </div>
 
 
-</body>
-</html>
+</div>  
 
+  </body>
+  
+  </html>
 
-
-<div class="col"></div>

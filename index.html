@@ -4,29 +4,44 @@
 <meta charset="UTF-8">
 <style>
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  margin: 14px;
-  background-color: black;
+.collapsible {
+  background-color: #777;
   color: white;
-  text-align: center;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  vertical-align: center;
+  background-color: #f1f1f1;
 }
 
 .newspaper {
 column-count: 3;
-margin: 4px;
-padding: 10px;
+font-size: 11px;
+margin: 5%, 20% 5% 20%;
+padding: 25px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: black;
   padding: 10px;
+  vertical-align: center;
 }
 
 .grid-container > div {
@@ -68,7 +83,53 @@ padding: 10px;
       </nav>
       <br>
 
-<img src="images/artShow.jpg" alt="BJenkins" class="responsive" width="600" height="400">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1>Creative Design</h1>      
+          <p>An artist's eye and <strong>dynamic layout and design</strong> for all your business content</p>
+
+          <p>What we offer:</p>
+          <button type="button" class="collapsible">Creative Print Design</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <button type="button" class="collapsible">Web Development</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <button type="button" class="collapsible">Marketing Strategies</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+  
+
+        <div class="container">
+          <style> vertical-align:center </style>
+          <img class="img-fluid" src="images/artShow.jpg" alt="jenkins art and design" width="460" height="345"> 
+            </div>
+
 
       <!-- Control the column width, and how they should appear on different devices -->
 <div class="newspaper">
@@ -81,12 +142,10 @@ padding: 10px;
   congue nihil imperdiet doming id quod mazim placerat facer possim assum.
 </div>
 
-<div class="footer">
-  <p>JENKINS ART & DESIGN</p>
-  <br>
-  <p>Stanton Court, Keene, NH • studiojenkins@yahoo.com
-  </p>
-</div>
+
+    <!-- <img src="images/artShow.jpg" alt="BJenkins" class="responsive" width="600" height="400"> -->
+
+
 
 </div>
 
