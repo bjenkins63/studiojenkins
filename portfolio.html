@@ -8,9 +8,12 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 10px;
+    grid-gap: 30px;
     background-color: white;
-    padding: 10px;
+    padding: 35px;
+    vertical-align: center;
+    inset: 10px;
+    border: 35px;
   }
   
 .grid-container > div {
@@ -22,13 +25,14 @@
   }
 
 p {
-    text-align:center;
     font-size: small;
     text-align: center;
   }
 
+
 .body {
-  margin: 0;
+  margin: 12px;
+  padding: 20px;
   font-family: Arial;
   text-align: center;
 }
@@ -42,9 +46,21 @@ p {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  border: 35px;
   padding: 24px;
+  margin: 35px;
   vertical-align: middle;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkolivegreen;
+    color: white;
+    text-align: center;
+  }
   
 </style>
 
@@ -99,17 +115,8 @@ p {
 </div>
 </div>
 
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
-          <div class="container" style= "color: white"; style= "text-align: center";>
-            <div class="container-fluid">
-              <div class="row"> 
-                  <class="col-md-4">
-                  <class="col-md-4"> <strong>JENKINS </strong>art & design
-                  <class="col-md-4">
-                
-              </div>
-
+<div class="footer">
+  <p>studiojenkins@yahoo.com</p>
 </div>
 
   </body>
