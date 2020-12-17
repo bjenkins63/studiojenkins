@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<head>
+  <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <style>
 
@@ -11,7 +12,7 @@
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
   font-size: 15px;
 }
@@ -26,13 +27,6 @@
   overflow: hidden;
   vertical-align: middle;
   background-color: #f1f1f1;
-}
-
-.newspaper {
-column-count: 3;
-font-size: 11px;
-margin: 5px, 30px 5px 30px;
-padding: 50px;
 }
 
 .grid-container {
@@ -50,18 +44,16 @@ padding: 50px;
   text-align: center;
   font-size: 30px;
 }
-
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
 </style>
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
 
 <body>
 
@@ -91,20 +83,35 @@ padding: 50px;
           <p>What we offer:</p>
           <button type="button" class="collapsible">Creative Print Design</button>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adi.</p>
           </div>
           <button type="button" class="collapsible">Web Development</button>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed .</p>
           </div>
           <button type="button" class="collapsible">Marketing Strategies</button>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem.</p>
         </div>
       </div>
 
-
+      <div class="container">
+        <div class="row"> 
+            <img class="img-fluid" src="images/artShow.jpg" alt="jenkins art and design" style= "vertical-align: center"> 
 </div>
+      
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+  <div class="container" style= "color: white"; style= "text-align: center";>
+    <div class="container-fluid">
+      <div class="row" style= "text-align: center"> 
+      <strong>JENKINS </strong>art & design
+        
+      </div>
+
+</body>
+</html>
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
@@ -120,37 +127,4 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
-}
-</script>
-
-  
-
-        <div class="container">
-          <img class="img-fluid" src="images/artShow.jpg" alt="jenkins art and design" width="600" height="auto" vertical-align="middle"> 
-            </div>
-
-
-      <!-- Control the column width, and how they should appear on different devices -->
-<div class="newspaper">
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
-  ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 
-  tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 
-  iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat 
-  nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril 
-  delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option 
-  congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-</div>
-
-
-    <!-- <img src="images/artShow.jpg" alt="BJenkins" class="responsive" width="600" height="400"> -->
-
-
-
-</div>
-
-</body>
-
-
-</body>
-</html>
-
+}</script>

@@ -13,25 +13,24 @@
     padding: 10px;
   }
   
-  .grid-container > div {
+.grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid black;
     margin: 10px;
     padding: 12px;
     text-align: center;
-    font-size: 30px;
   }
 
-  p {
+p {
     text-align:center;
     font-size: small;
+    text-align: center;
   }
 
-}
-
-body {
+.body {
   margin: 0;
   font-family: Arial;
+  text-align: center;
 }
 
 .header {
@@ -40,52 +39,14 @@ body {
 }
 
 .row {
-  display: -ms-flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
-  vertical-align: middle;
-
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 4px;
+  text-align: center;
+  padding: 24px;
   vertical-align: middle;
 }
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 45%;
-    flex: 45%;
-    max-width: 45%;
-    vertical-align: middle;
-
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-    vertical-align: middle;
-
-  } 
   
-  </style>
+</style>
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -117,25 +78,39 @@ body {
   <h1>Brian Jenkins</h1>
   <p>Recent Work</p>
 </div>
-
-    <!-- Photo Grid -->
-
-<div class="row"> 
-  <div class="column">
-    <img src="images/Emerson.jpg" style="width:100%">
-    <img src="images/WH2.jpg" style="width:100%">
-    <img src="images/whiteGE.jpg" style="width:100%">
+  <div class="container-fluid">
+  <div class="row">
+      <class="col-md-3"> <img src="images/Emerson.jpg";> 
+      <class="col-md-3"> <img src="images/whiteGE.jpg";>
+      <class="col-md-3"> <img src="images/WH2.jpg";>
+      <class="col-md-3"> <img src="images/WH3.jpg";>
 
   </div>
-  <div class="column">
-    <img src="images/WH3.jpg" style="width:100%">
-    <img src="images/Silvertone.jpg" style="width:100%">
-    <img src="images/solidstate.jpg" style="width:100%">
+</div>
 
+  <div class="container-fluid">
+  <div class="row"> 
+      <class="col-md-3"><img src="images/Silvertone.jpg";>
+      <class="col-md-3"><img src="images/solidstate.jpg";>
+      <class="col-md-3"><img src="images/zenith6.jpg";>
+      <class="col-md-3"><img src="images/Zenith.jpg";>
+
+
+</div>
 </div>
 
 
-</div>  
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+          <div class="container" style= "color: white"; style= "text-align: center";>
+            <div class="container-fluid">
+              <div class="row"> 
+                  <class="col-md-4">
+                  <class="col-md-4"> <strong>JENKINS </strong>art & design
+                  <class="col-md-4">
+                
+              </div>
+
+</div>
 
   </body>
   
