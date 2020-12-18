@@ -10,7 +10,7 @@ Created in Visual Studio Code using some bootstrap elements
 
 ### Author
 
-* **Billie Thompson** - *Initial work* 
+* **Brian Jenkins** - *Initial work* 
 
 
 ## Acknowledgments
